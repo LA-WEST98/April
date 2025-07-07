@@ -8,7 +8,7 @@ RUN apk add --no-cache git openssh-client bash
 COPY package*.json ./
 
 # Install dependencies
-RUN npm install
+RUN npm install --legacy-peer-deps
 
 # Set working directory inside container
 WORKDIR /app
@@ -17,6 +17,6 @@ WORKDIR /app
 # COPY . .
 
 # Default command to keep container alive or run shell
-CMD ["sh"]
+CMD ["sh", "npm", "start"]
 
 
