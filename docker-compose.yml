@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    volumes:
+      - .:/app    # Mount current folder into container
+    working_dir: /app
+    command: sh    # Start with shell; change as needed
+    ports:
+      - "3000:3000"  # If your Node app listens on 3000
+    environment:
+      - NODE_ENV=development
