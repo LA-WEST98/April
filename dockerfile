@@ -1,6 +1,13 @@
 # Use official Node.js Alpine image
 FROM node:18-alpine
 
+# Install build tools
+RUN apt-get update && apt-get install -y \
+  python3 \
+  make \
+  g++ \
+  && ln -sf python3 /usr/bin/python
+
 # Install git, openssh-client (for ssh and scp)
 RUN apk add --no-cache git openssh-client bash
 
