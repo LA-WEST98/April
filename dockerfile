@@ -1,8 +1,8 @@
 # Use official Node.js Alpine image
 FROM node:18-alpine
 
-# Install build tools
-RUN apt-get update && apt-get install -y \
+# Install build tools with apk
+RUN apk add --no-cache \
   python3 \
   make \
   g++ \
