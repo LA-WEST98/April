@@ -16,7 +16,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/your-username/your-repo-name.git'
+                git 'https://github.com/LA-WEST98/April.git'
             }
         }
 
