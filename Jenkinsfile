@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'yourdockerhubusername/landingpage-builder:latest'
+            image 'lawest98/april:latest'
             args '-u root:root'  // run as root user for permissions
         }
     }
