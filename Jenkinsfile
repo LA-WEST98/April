@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'lawest98/april:latest'
+            image 'lawest98/april'
             args '-u root:root'  // run as root user for permissions
         }
     }
