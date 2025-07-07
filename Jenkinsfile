@@ -7,7 +7,7 @@ pipeline {
     }
 
     environment {
-        SSH_CREDENTIALS_ID = 'ec2-ssh-key-id'        // Jenkins SSH credentials ID
+        SSH_CREDENTIALS_ID = 'april-id'        // Jenkins SSH credentials ID
         EC2_USER = 'ec2-user'                        // EC2 SSH username (e.g., ec2-user or ubuntu)
         EC2_HOST = 'your-ec2-public-ip-or-dns'      // EC2 public IP or hostname
         REMOTE_DIR = '/var/www/html'                  // Deployment directory on EC2
